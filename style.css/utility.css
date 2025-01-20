@@ -1,0 +1,84 @@
+
+
+/* colors */
+
+:root{
+    --orange:orange;
+    --sky-blue:skyblue;
+    --paste:#05D4DF;
+    --light-violate:#5D58EF;
+}
+
+
+.orange{
+    color: var(--orange);
+} 
+
+.sky-blue{
+    color: var(--sky-blue);
+} 
+
+.paste{
+    color: var(--paste);
+} 
+
+.light-violate{
+    color: var(--light-violate);
+}
+
+/* display flex c c */
+.df-jc-ac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.display-flex{
+    display: flex;
+}
+
+
+/* nav bar heading  */
+
+.nav-heading{
+    display: flex;
+    align-items: center;
+    gap: 0.6875rem;
+} 
+
+
+
+/* styles of buttons */
+
+.common-btn{
+    width: 12.3125rem;
+    height: 3.125rem;
+    border-radius: 0.75rem;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color:#ffffff;
+    font-size:1.25rem ;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* style of hero section description */ 
+
+.description{
+    font-size: clamp(0.875rem, 0.7943rem + 0.3797vw, 1.25rem);
+    margin-bottom:clamp(1.125rem, 1.0443rem + 0.3797vw, 1.5rem);
+}
+
+
+
+
+
+
+
+
+
+.margin-right{
+    margin-right: 2rem;
+}
