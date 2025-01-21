@@ -47,6 +47,11 @@
     gap: 0.6875rem;
 } 
 
+/*  margin of anchor tag in navbar */
+.margin-right{
+    margin-right: 2rem;
+}
+
 
 
 /* styles of buttons */
@@ -71,14 +76,113 @@
     margin-bottom:clamp(1.125rem, 1.0443rem + 0.3797vw, 1.5rem);
 }
 
+/* section heading */ 
+
+.section-heading{
+    font-size: clamp(1.625rem, 1.356rem + 1.2658vw, 2.875rem);
+    font-weight: bold;
+    color: #000000;
+} 
 
 
-
-
-
-
-
-
-.margin-right{
-    margin-right: 2rem;
+/* standard curriculum card design */
+.card{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    padding:3.30125rem 2.555rem;
+    border-radius: 1.17875rem;
 }
+
+
+/* unique design of every card */
+
+.card1{
+    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF, #FFFFFF, #FFFFFF);
+    border-left:0.05875rem solid #DEF5FF;
+    border-right:0.05875rem solid #DEF5FF;
+    border-bottom:0.05875rem solid #DEF5FF;
+}
+
+.card2{
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF, #FFFFFF, #FFFFFF);
+    border-left:0.05875rem solid #FFF4DC;
+    border-right:0.05875rem solid #FFF4DC;
+    border-bottom:0.05875rem solid #FFF4DC;
+}
+
+.card3{
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF, #FFFFFF, #FFFFFF);
+    border-left:0.05875rem solid #F2E8FF;
+    border-right:0.05875rem solid #F2E8FF;
+    border-bottom:0.05875rem solid #F2E8FF ;
+}
+
+
+
+
+
+
+
+
+/* standard curriculum card images */
+
+
+.card-img{
+    margin-bottom: 2rem;
+}
+
+
+
+/* standard curriculum card heading */
+
+.card-heading{
+    font-size: clamp(1.015625rem, 0.9044rem + 0.5234vw, 1.5325rem);
+    font-weight: bold;
+    margin-bottom: 2.0925rem;
+}
+
+
+
+
+
+/* standard curriculum card description  */ 
+
+
+.card-description{
+    font-size: clamp(0.63875rem, 0.5733rem + 0.3082vw, 0.943125rem);
+    color:#808080 ;
+    line-height: clamp(1.2rem, 1.0776rem + 0.5759vw, 1.76875rem);
+    margin-bottom:clamp(2.25rem, 2.0111rem + 1.1241vw, 3.36rem);;
+
+} 
+
+/* read more  */
+
+.read-more{
+    text-decoration: none;
+    font-size: clamp(0.63875rem, 0.5733rem + 0.3082vw, 0.943125rem);
+    font-weight: bold;
+
+}
+
+
+/* individual style on read more */
+
+
+
+.read-more1{
+    color:#64C8FF ;
+}
+
+.read-more2{
+    color:#F0AA00 ;
+}
+
+.read-more3{
+    color:#8700FF ;
+}
+
