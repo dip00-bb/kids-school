@@ -386,8 +386,13 @@ footer .content .left-footer .foot-img{
     } 
 
     /* footer */
+    footer{
+        padding: 4.0625rem 0 3.75rem 0rem;
+    }
     footer .content{
+        width: 90%;
         flex-direction: column;
+
     }
     
     footer .content .left-footer{
