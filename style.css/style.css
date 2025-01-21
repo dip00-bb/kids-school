@@ -104,6 +104,7 @@ main #hero{
     justify-content: space-between;
     align-items: center;
     margin-bottom: clamp(2.5rem, 2.0831rem + 1.962vw, 4.4375rem);
+
 }
 
 main #hero .text-content{
@@ -133,11 +134,10 @@ main #curriculum{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 } 
 
-main #curriculum h1{
-    margin:clamp(2.5rem, 2.231rem + 1.2658vw, 3.75rem) 0  clamp(1.25rem, 0.443rem + 3.7975vw, 5rem) 0;
-} 
+
 
 
 
@@ -145,6 +145,7 @@ main #curriculum .card-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
 main #curriculum .arrow-container{
@@ -154,14 +155,86 @@ main #curriculum .arrow-container{
 
 
 
+/* -------------------------- marquee -------------------------------- */
+
+
+marquee {
+    width: 80%;
+    font-size: 2.3rem;
+    color: #000000;
+    background: linear-gradient(to left, #9bc5cc, #c6eb9c);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    
+}
+
+
+/* -------------------------- our-stories -------------------------------- */
+
+
+main #our-stories{
+    /* background:linear-gradient(to top, #FFE9C1, #FFFFFF), url("../assets/bg.png") no-repeat 50% -50%  / cover; */
+    background: url("../assets/bg.png") no-repeat 50% -20% / cover,linear-gradient(to top, #FFD284, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8.75rem 8.75rem 3.75rem 8.75rem;
+}
+
+
+
+main #our-stories .grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.206875rem;
+    grid-template-areas: 
+        'box1 box1 box2 box3'
+        'box1 box1 box4 box5'
+    ; 
+    margin-bottom: 5rem;
+}
+
+main #our-stories .grid-container .box1{
+    grid-area: box1;
+}
+
+main #our-stories .grid-container .box2{
+    grid-area: box2;
+}
+
+main #our-stories .grid-container .box3{
+    grid-area: box3;
+}
+
+main #our-stories .grid-container .box4{
+   grid-area: box4;
+}
+
+main #our-stories .grid-container .box5{
+    grid-area: box5;
+}
 
 
 
 
+main #our-stories .grid-container .box3 .grid-content-small-box span{
+    background-color: #5D58F0;
+}
 
-
-
-
+main #our-stories .grid-container .box5 .grid-content-small-box span{
+    width:7.965rem ;
+    height: 2.396875rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:0 ;
+    padding-right: 0;
+}
 
 
 
@@ -178,6 +251,14 @@ main #curriculum .arrow-container{
 
 @media screen and (max-width:576px) {
 
+    /* common-btn */
+
+    .common-btn{
+        width: 8.1875rem;
+        height: 2.625rem;
+        border-radius: 0.5rem;
+
+    }
     /*  -------------------------- header --------------------------------  */
 
     header{
@@ -231,6 +312,53 @@ main #curriculum .arrow-container{
     main #curriculum .card-container .card{
        width: 100%;
         
+    } 
+
+    /* -------------------------- our-stories -------------------------------- */
+
+    main #our-stories{
+        padding: 1rem;
+    }
+    main #our-stories .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+            'box2 box3'
+            'box4 box5'
+        ;
+        gap: 0.706875rem;
+        margin-bottom: 2.5rem;
+    } 
+
+    .grid-content-small-box{
+        padding-left: 1.410625rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1.1rem;
+        padding-top: 1rem;
     }
 
+
+    /* styling span */
+    .small-span{
+        width:6.625rem ;
+        height:1.426875rem ;
+        font-size:0.570625rem ;
+        font-weight: 500;
+        padding:0.3925rem  0.71375rem;
+        border-radius: 1.78375rem;
+        background-color:#95B226 ;
+        color: #FFFFFF;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+    } 
+
+    main #our-stories .grid-container .box5 .grid-content-small-box span{
+        width:5.5rem ;
+        height: 1.425rem;
+        font-size: 0.5rem;
+        padding-left:0.5rem ;
+        padding-right: 0.5rem;
+    }
+    
 }
