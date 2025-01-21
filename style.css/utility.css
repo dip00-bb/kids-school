@@ -319,3 +319,33 @@
 
 } 
 
+/* footer */
+
+.foot-head{
+    font-size: clamp(2.20625rem, 2.1143rem + 0.4329vw, 2.63375rem);
+    color: #ffffff;
+} 
+
+.foot-description{
+    font-size: clamp(1rem, 0.9462rem + 0.2532vw, 1.25rem);
+    color:#ffffff ;
+} 
+
+.head{
+    font-size: clamp(1.271875rem, 1.2228rem + 0.231vw, 1.5rem);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+} 
+
+.foot-anchor{
+    font-size: clamp(1.1rem, 1.0139rem + 0.4051vw, 1.5rem);
+    color: #FFFFFF;
+    text-decoration: none;
+
+} 
+
+.list-style-none{
+    list-style: none;
+    margin-bottom:clamp(1.0625rem, 0.9684rem + 0.443vw, 1.5rem);
+}

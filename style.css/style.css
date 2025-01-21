@@ -237,7 +237,31 @@ main #our-stories .grid-container .box5 .grid-content-small-box span{
 }
 
 
+/* ------------------------------------------------ footer ------------------------------------------------ */ 
 
+
+footer{
+    background-color: #01ACFD;
+    justify-content: center;
+    align-items: center;
+    padding: 7.6875rem 0 6.75rem 0;
+
+} 
+
+footer .content{
+    width: 75%;
+    height: 42%;
+    background-color: #01ACFD;
+    justify-content: space-between;
+}
+
+footer .content .left-footer{
+    width: 37%;  
+}
+
+footer .content .left-footer .foot-img{
+    margin-bottom:1.9rem ;
+}
 
 
 
@@ -359,6 +383,16 @@ main #our-stories .grid-container .box5 .grid-content-small-box span{
         font-size: 0.5rem;
         padding-left:0.5rem ;
         padding-right: 0.5rem;
+    } 
+
+    /* footer */
+    footer .content{
+        flex-direction: column;
+    }
+    
+    footer .content .left-footer{
+        width: 100%;  
+        margin-bottom: 2rem;
     }
     
 }
