@@ -84,8 +84,8 @@
     outline: 0;
     background-color: black;
     color:#ffffff;
-    font-size:1.25rem ;
-    font-weight: 500;
+    font-size: clamp(1rem, 0.9462rem + 0.2532vw, 1.25rem);
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -94,6 +94,8 @@
 .description{
     font-size: clamp(0.875rem, 0.7943rem + 0.3797vw, 1.25rem);
     margin-bottom:clamp(1.125rem, 1.0443rem + 0.3797vw, 1.5rem);
+    font-weight: 400;
+    color: black;
 
 }
 

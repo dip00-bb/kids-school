@@ -72,6 +72,7 @@ header nav ul li a{
 
 header nav .right .nav-btn{
     background-color: orange;
+    font-weight: 600;
 
 } 
 
@@ -128,12 +129,14 @@ main #hero .image-content img{
 /* -------------------------- curriculum -------------------------------- */
 
 main #curriculum{
-    width: 80%;
+    width: 90%;
     background: url("../assets/bg.png") no-repeat 50% -50%  / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+
 
 } 
 
@@ -159,13 +162,14 @@ main #curriculum .arrow-container{
 
 
 marquee {
-    width: 80%;
-    font-size: 2.3rem;
+    width: 90%;
+    font-size: clamp(1.3rem, 1.0848rem + 1.0127vw, 2.3rem);
     color: #000000;
     background: linear-gradient(to left, #9bc5cc, #c6eb9c);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 2rem;
+
     
 }
 
@@ -263,7 +267,9 @@ footer .content .left-footer .foot-img{
     margin-bottom:1.9rem ;
 }
 
-
+footer .content .middle .head{
+    margin-bottom:clamp(1.6875rem, 1.6203rem + 0.3165vw, 2rem);
+}
 
 
 
@@ -395,8 +401,14 @@ footer .content .left-footer .foot-img{
 
     }
     
+    
+
     footer .content .left-footer{
         width: 100%;  
+        margin-bottom: 2rem;
+    } 
+
+    footer .content .middle .last-child{
         margin-bottom: 2rem;
     }
     
